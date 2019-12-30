@@ -12,7 +12,7 @@ The classification tree is hierarchical in nature (as seen in the image below). 
 
 ## Results
 
-Results for each iteration of the model can be found in their respective directory.
+Results for each iteration of the models can be found in their respective directories.
 
 ## Relevant Resources
 
