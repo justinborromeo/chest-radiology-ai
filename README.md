@@ -8,7 +8,7 @@ Due to the dataset's size, I didn't include the data in the repo.  To run any of
 
 The classification tree is hierarchical in nature (as seen in the image below).  My strategy is to train reasonably good binary classifiers for the higher-level conditions then use those trained modules as building blocks for our multi-class classifiers, which will be submitted for evaluation.
 
-~[Condition hierarchy](https://stanfordmlgroup.github.io/competitions/chexpert/img/figure1.png)
+![Condition hierarchy](https://stanfordmlgroup.github.io/competitions/chexpert/img/figure1.png)
 
 ## Relevant Resources
 
