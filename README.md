@@ -1,5 +1,9 @@
 # CheXpert Dataset Classification
 
+Stanford's CheXpert dataset (https://stanfordmlgroup.github.io/competitions/chexpert/) provides ~200K X-rays labelled with various conditions.  The goal of this project is to train binary classifiers for specific conditions and ultimately, use those as building blocks for a multi-class classifier.
+
+Due to the dataset's size, I didn't include the data in the repo.  To run any of the notebooks, download the small dataset (lower resolution images) and place it in the repo's root directory.
+
 ## Relevant Resources
 
 ### Classification
@@ -20,4 +24,3 @@
 ### Improving Network Performance and Training Optimizations
 - Batch Normalization: https://arxiv.org/pdf/1502.03167.pdf
 - Dropout Regularization: https://machinelearningmastery.com/dropout-for-regularizing-deep-neural-networks/
-
