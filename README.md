@@ -1,5 +1,19 @@
 # CheXpert Dataset Classification
 
+Stanford's CheXpert dataset (https://stanfordmlgroup.github.io/competitions/chexpert/) provides ~200K chest X-rays labelled with various conditions.  The goal of this project is to automate radiology for chest conditions.
+
+Due to the dataset's size, I didn't include the data in the repo.  To run any of the notebooks, download the small dataset (lower resolution images) and place it in the repo's root directory.
+
+## Strategy
+
+The classification tree is hierarchical in nature (as seen in the image below).  The numbers on the chart correspond to the proportion of images in the dataset that present those conditions.  My strategy is to train reasonably good binary classifiers for the higher-level conditions then use those trained modules as building blocks for our multi-class classifiers, which will be submitted for evaluation.
+
+![Condition hierarchy](https://stanfordmlgroup.github.io/competitions/chexpert/img/figure1.png)
+
+## Results
+
+Results for each iteration of the models can be found in their respective directories.
+
 ## Relevant Resources
 
 ### Classification
@@ -20,4 +34,3 @@
 ### Improving Network Performance and Training Optimizations
 - Batch Normalization: https://arxiv.org/pdf/1502.03167.pdf
 - Dropout Regularization: https://machinelearningmastery.com/dropout-for-regularizing-deep-neural-networks/
-
