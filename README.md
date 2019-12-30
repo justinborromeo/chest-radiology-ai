@@ -1,8 +1,14 @@
 # CheXpert Dataset Classification
 
-Stanford's CheXpert dataset (https://stanfordmlgroup.github.io/competitions/chexpert/) provides ~200K X-rays labelled with various conditions.  The goal of this project is to train binary classifiers for specific conditions and ultimately, use those as building blocks for a multi-class classifier.
+Stanford's CheXpert dataset (https://stanfordmlgroup.github.io/competitions/chexpert/) provides ~200K chest X-rays labelled with various conditions.  The goal of this project is to automate radiology for chest conditions.
 
 Due to the dataset's size, I didn't include the data in the repo.  To run any of the notebooks, download the small dataset (lower resolution images) and place it in the repo's root directory.
+
+## Strategy
+
+The classification tree is hierarchical in nature (as seen in the image below).  My strategy is to train reasonably good binary classifiers for the higher-level conditions then use those trained modules as building blocks for our multi-class classifiers, which will be submitted for evaluation.
+
+~[Condition hierarchy](https://stanfordmlgroup.github.io/competitions/chexpert/img/figure1.png)
 
 ## Relevant Resources
 
